@@ -137,4 +137,14 @@ class TestController extends Controller
         \Yii::warning(date('Y-m-d') . 'PreTenSecond', __METHOD__);
         echo '10';
     }
+
+    public function actionIndex()
+    {
+        echo Yii::t('app', 'hello1');
+    }
+
+    public function actionIndex1()
+    {
+        echo Yii::t('app', 'Goodbye_flag');
+    }
 }
